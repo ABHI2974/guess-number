@@ -58,6 +58,6 @@ function resetGame() {
   startTimer();
 }
 
-// Initialize the game
+
 generateNumber();
 startTimer();

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Guess The Number Game</title>
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" />
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Rubik&display=swap" rel="stylesheet" />
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <div class="game-container">
+    <div class="game-box">
+      <img src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-dynamic-webapps/guess-game-img.png" alt="Guess Game" class="game-img" />
+      <h1 class="guess-heading">Guess The Number</h1>
+      <p class="timer">⏱️ Time Left: <span id="timer">30</span>s</p>
+      <input type="text" class="user-input" id="userInput" placeholder="Enter number" />
+      <div>
+        <button class="btn btn-primary check-btn" onclick="checkGuess()">Check</button>
+        <button class="btn btn-secondary reset-btn" onclick="resetGame()">Reset</button>
+      </div>
+      <p id="gameResult" class="game-result"></p>
+    </div>
+  </div>
+
+  <div class="footer">&copy; 2025 MITS | Interactive Game Project</div>
+
+  <!-- Custom JS -->
+  <script src="script.js"></script>
+</body>
+</html>
